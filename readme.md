@@ -36,9 +36,9 @@
 - Navigate to the directory containing the script in the terminal or Command Prompt.
 - Run the script using the following command:
     ```bash
-    python script_name.py
+    python3 download_images.py 
     ```
-    Replace `script_name.py` with the actual name of your Python script.
+    Replace `download_images.py ` with the actual name of your Python script.
 
 ### 5. Script Execution
 - The script will start running and display progress messages in the terminal or Command Prompt.
