@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyc
+*.pyo
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+env1/
+venv1/
+
+# IDE
+.vscode/
+.idea/
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+*.cache
+
+# Output of pyinstaller
+dist/
+build/
+
+# Distribution/installation files
+*.egg-info/
+*.egg
+*.egg-info
+*.pip
+*.tar.gz
+*.rpm
+*.deb
+*.pyz
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Pytest
+__pycache__/
+.pytest_cache/
+pytestdebug.log
