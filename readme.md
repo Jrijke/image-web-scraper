@@ -32,6 +32,19 @@
     pip install os shutil datetime selenium requests urllib
     ```
 
+### 4. Change the parameters in the script to your needs
+- Change the following variables:
+
+```bash
+BASE_URL = "https://www.domain.com"
+urls = [
+        "url_1",
+        "url_2",
+        "...",
+    ]
+target_html_element_id = "main"
+```
+
 ### 4. Run the Script
 - Navigate to the directory containing the script in the terminal or Command Prompt.
 - Run the script using the following command:

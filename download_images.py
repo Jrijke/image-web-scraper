@@ -9,6 +9,11 @@ import requests
 from urllib.parse import urljoin, urlparse
 
 BASE_URL = "https://www.mb-wensink.nl"
+urls = [
+        "https://www.mb-wensink.nl/mercedes-benz/a-klasse/250-e-amg-line/wensink-leeuwarden/detail/occ19147874",
+        "https://www.mb-wensink.nl/mercedes-benz/a-klasse/180-luxury-line/wensink-nijmegen/detail/occ19138941?conpag=p000720"
+    ]
+target_html_element_id = "car-detail"
 current_time = datetime.now().strftime("%Y%m%d%H%M%S")
 
 # ANSI escape codes for text formatting
@@ -20,7 +25,7 @@ def download_images(driver, folder_path=f'images_{current_time}'):
     try:
         # Find the images div
         images_div = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, 'car-detail'))
+            EC.presence_of_element_located((By.ID, target_html_element_id))
         )
 
         # Find all image tags inside the main div with data-src attribute
@@ -78,10 +83,7 @@ def scrape_webpage(url, folder_path=f'images_{current_time}'):
         driver.quit()
 
 if __name__ == "__main__":
-    target_urls = [
-        "https://www.mb-wensink.nl/mercedes-benz/a-klasse/250-e-amg-line/wensink-leeuwarden/detail/occ19147874",
-        "https://www.mb-wensink.nl/mercedes-benz/a-klasse/180-luxury-line/wensink-nijmegen/detail/occ19138941?conpag=p000720"
-    ]
+    target_urls = urls
 
     for url in target_urls:
         scrape_webpage(url)
