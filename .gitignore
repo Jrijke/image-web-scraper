@@ -58,3 +58,6 @@ build/
 __pycache__/
 .pytest_cache/
 pytestdebug.log
+
+#MacOS
+.DS_Store
