@@ -23,13 +23,13 @@
 #### Windows
 - Pip should be installed with Python on Windows. Verify by typing:
     ```bash
-    pip --version
+    pip3 --version
     ```
 
 ### 3. Install Dependencies
 - Navigate to the script's directory using the terminal or Command Prompt and run:
     ```bash
-    pip install os shutil datetime selenium requests urllib
+    pip3 install os shutil datetime selenium requests urllib
     ```
 
 ### 4. Change the parameters in the script to your needs
